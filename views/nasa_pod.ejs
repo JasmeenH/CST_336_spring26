@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <%- include("partials/head.ejs")%>
+</head>
+
+<body>
+    <h1 class="title">NASA Picture Of The Day</h1>
+    <%- include("partials/nav.ejs")%>
+        <div class="container-fluid m-5 row">
+            <div class="card p-4 col">
+
+                <h3>
+                    <%= nasa_data.title %>
+                </h3>
+                <p>
+                    <%= nasa_data.explanation %>
+                </p>
+            </div>
+            <div class="card p-4 col">
+                <img src="<%= nasa_data.hdurl%>" alt="Nasa POD" class="card_img">
+                <p id="img_copyright">Image copyright: <%= nasa_data.copyright %>
+                </p>
+            </div>
+
+        </div>
+</body>
+<%- include("partials/footer.ejs")%>
+
+</html>

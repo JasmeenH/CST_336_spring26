@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+}
+
+nav {
+    font-weight: bold;
+}
+
+nav a:hover {
+    border-bottom: 6px #408A71 solid;
+    font-size: 1.1em;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.title {
+    background-color: #285A48;
+    padding: 2%;
+    margin: 0 auto;
+}
+
+#img_copyright {
+    font-size: smaller;
+}
+
+.card_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
